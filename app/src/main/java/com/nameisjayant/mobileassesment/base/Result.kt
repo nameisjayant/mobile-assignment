@@ -7,6 +7,9 @@ import kotlinx.coroutines.flow.flowOn
 import retrofit2.Response
 import java.net.UnknownHostException
 
+/*
+Generic function for emitting SUCCESS, FAILURE, and LOADING state , So whatever result comes from the server it will emit that state
+ */
 fun <T> toResultFlow(call: suspend () -> Response<T>): Flow<ApiState<T>> = flow {
     emit(ApiState.Loading)
     try {
@@ -18,7 +21,6 @@ fun <T> toResultFlow(call: suspend () -> Response<T>): Flow<ApiState<T>> = flow 
         } else {
             when (response.code()) {
                 in 500..509 -> emit(ApiState.Failure("{\"message\" : \"INTERNAL SERVER ERROR\"}"))
-                413 -> emit(ApiState.Failure("{\"message\" : \"FILE IS TOO LARGE\"}"))
                 else -> response.errorBody()?.let { error ->
                     error.close()
                     emit(ApiState.Failure(error.string()))
@@ -28,7 +30,7 @@ fun <T> toResultFlow(call: suspend () -> Response<T>): Flow<ApiState<T>> = flow 
         }
     } catch (e: UnknownHostException) {
         emit(ApiState.Failure("{\"message\" : \"INTERNET NOT FOUND\"}"))
-    }catch (e: Exception) {
+    } catch (e: Exception) {
         emit(ApiState.Failure("{\"message\" : \"${e.message}\"}"))
     }
 

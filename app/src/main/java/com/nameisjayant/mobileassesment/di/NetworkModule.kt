@@ -14,6 +14,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
 
+/*
+Network module file for providing Moshi , Retrofit & ApiService dependencies
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -27,6 +30,7 @@ object NetworkModule {
                 add(KotlinJsonAdapterFactory())
                 build()
             }
+
     @Provides
     @Singleton
     fun providesApiService(
@@ -38,6 +42,7 @@ object NetworkModule {
         client(client)
         build()
     }.create(ApiService::class.java)
+
     @Provides
     @Singleton
     fun providesOkHttp(): OkHttpClient {
@@ -53,6 +58,7 @@ object NetworkModule {
             }
             .build()
     }
+
     private inline fun retrofit(init: Retrofit.Builder.() -> Unit): Retrofit {
         val retrofit = Retrofit.Builder()
         retrofit.init()

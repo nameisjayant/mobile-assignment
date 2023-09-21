@@ -8,6 +8,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.nameisjayant.mobileassesment.R
 
+/*
+font family and typography
+ */
 val robotoRegular = FontFamily(
     Font(R.font.roboto_regular)
 )
@@ -29,7 +32,7 @@ val Typography = Typography(
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
-    bodyMedium =  TextStyle(
+    bodyMedium = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,

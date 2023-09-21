@@ -11,6 +11,9 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 import java.util.TimeZone
 
+/*
+convert the error json data into kotlin object
+ */
 fun convertErrorJsonToObject(
     moshi: Moshi,
     jsonData: String
@@ -19,6 +22,9 @@ fun convertErrorJsonToObject(
     return jsonAdapter.fromJson(jsonData)
 }
 
+/*
+date is coming in GMT javascript formate , this function will convert the date same as UI i,e, 24 Apr, 23 09:06 AM
+ */
 fun getDate(
     timestamp: String
 ): String {
@@ -32,7 +38,9 @@ fun getDate(
     return outputFormat.format(parsedDate ?: "")
 }
 
-
+/*
+function for download image/pdf and store in download folder of our device
+ */
 fun downloadAndStoreFile(context: Context, fileUrl: String, fileName: String) {
     val downloadManager = context.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
     val request = DownloadManager.Request(Uri.parse(fileUrl))

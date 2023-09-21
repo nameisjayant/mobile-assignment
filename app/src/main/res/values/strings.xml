@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Mobile Assesment</string>
+    <string name="app_name">Assement</string>
+    <string name="design_layouts">Design Layouts</string>
+    <string name="client">CLIENT</string>
+    <string name="bridgestone">Bridgestone</string>
+    <string name="brid1337">BRID1337</string>
+    <string name="job_id">JOB ID</string>
+    <string name="_2d_layout_adaptation">2D Layout/Adaptation</string>
+    <string name="files">Files</string>
+    <string name="download">Download</string>
+    <string name="other_content">Other Content</string>
+    <string name="production_files_artworks">Production Files/ Artworks</string>
+    <string name="_3d_layout_adaptation">3D Layout/Adaptation</string>
 </resources>

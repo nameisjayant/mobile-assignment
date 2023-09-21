@@ -13,6 +13,10 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
 
+/*
+handle the network state in the compose way
+ */
+
 private val Context.currentConnectivityState: ConnectionState
     get() {
         val connectivityManager =
