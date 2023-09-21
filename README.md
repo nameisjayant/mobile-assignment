@@ -41,11 +41,11 @@ This app uses [_**MVVM (Model View View-Model)**_](https://developer.android.com
   ## ScreenShots
 
   <p align = "center" >
-    <img src = "https://ik.imagekit.io/b1tyxyuh2/Assignments/Screenshot%202023-09-21%20at%204.22.10%20PM_Xl-PYsdsC.png?updatedAt=1695293696825" height = "300px"/>
-    <img src = "https://ik.imagekit.io/b1tyxyuh2/Assignments/Screenshot%202023-09-21%20at%204.22.39%20PM_56wuVsnh2A.png?updatedAt=1695293696978" height = "300px"/>
+    <img src = "https://ik.imagekit.io/b1tyxyuh2/Assignments/Screenshot%202023-09-21%20at%204.22.10%20PM_Xl-PYsdsC.png?updatedAt=1695293696825" height = "400px"/>
+    <img src = "https://ik.imagekit.io/b1tyxyuh2/Assignments/Screenshot%202023-09-21%20at%204.22.39%20PM_56wuVsnh2A.png?updatedAt=1695293696978" height = "400px"/>
   </p>
    <p align = "center" >
-    <img src = "https://ik.imagekit.io/b1tyxyuh2/Assignments/Screenshot%202023-09-21%20at%204.22.53%20PM_dZILUmf2I.png?updatedAt=1695293697051" height = "300px"/>
-    <img src = "https://ik.imagekit.io/b1tyxyuh2/Assignments/Screenshot%202023-09-21%20at%204.22.28%20PM_FXjCQPpKRL.png?updatedAt=1695293697046" height = "300px"/>
+    <img src = "https://ik.imagekit.io/b1tyxyuh2/Assignments/Screenshot%202023-09-21%20at%204.22.53%20PM_dZILUmf2I.png?updatedAt=1695293697051" height = "400px"/>
+    <img src = "https://ik.imagekit.io/b1tyxyuh2/Assignments/Screenshot%202023-09-21%20at%204.22.28%20PM_FXjCQPpKRL.png?updatedAt=1695293697046" height = "400px"/>
   </p>
 
