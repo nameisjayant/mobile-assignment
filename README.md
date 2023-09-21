@@ -1,5 +1,8 @@
 
 # A Mobile Application Assignment
+- On clicking on each element card, a file associated with that element should be downloaded, and the progress of the download should be shown at the end of the element card. On completion of downloading,circular tick icon should be shown.
+- The list of sections should expand and collapse on clicking on the respective dropdown
+icon.
 
 ## Features  👓
 
