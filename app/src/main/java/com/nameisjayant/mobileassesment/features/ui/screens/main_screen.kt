@@ -163,7 +163,7 @@ fun MainScreen(
 }
 
 /*
-after completing from 0 to 100 with delay of 30 secs , it will download the image/pdf and stores in download folder
+after completing from 0 to 100 with delay of 30 milli-secs , it will download the image/pdf and stores in download folder
  */
 
 suspend fun downloadItem(data: DataResponse, context: Context, progress: (Int) -> Unit) {
